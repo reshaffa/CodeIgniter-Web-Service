@@ -11,6 +11,8 @@ Ada beberapa langkah dan beberapa library yang harus anda download. Berikut ini 
 	- Copy file **REST_Contoller.php** dan **Format.php** ke dalam folder /application/libraries/...
 	- Muatlah sebuah file Restfull.php di folder application/controllers/ *ini membuat controllers*
 	- Isikan baris kode berikut ke file Restfull.php
+		...
+		```php
 		<?php
 			defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -25,9 +27,12 @@ Ada beberapa langkah dan beberapa library yang harus anda download. Berikut ini 
 			        $this->load->database();
 			    }
 			}
+		...
 
 	- Buatlah sebuah model dengan nama App_model.php *ini ada di folder application/models/App_model.php*
 	- Sisipkan baris model sederhana berikut ini:
+	...
+	```php
 		<?php
 			defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -48,9 +53,11 @@ Ada beberapa langkah dan beberapa library yang harus anda download. Berikut ini 
 					}
 				}
 			}
+	...
 
 	- Buka kembali controller Restfull.php dan sisipkan baris berikut ini:
-		
+	...
+	```php
 		function index_get(){
 			$id=$this->get('id');
 			if(empty($id)){
@@ -68,6 +75,6 @@ Ada beberapa langkah dan beberapa library yang harus anda download. Berikut ini 
 	            $this->response($response, 404);
 	        }		
 	    }
-
+	...
 	- Silahkan buka browser dan ketik http://localhost/rest-full-api/restfull?id=1
 	- Maka secara default akan menampilkan data dalam bentuk format file json.
