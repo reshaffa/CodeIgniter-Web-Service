@@ -57,22 +57,21 @@ Ada beberapa langkah dan beberapa library yang harus anda download. Berikut ini 
 	```php
 		function index_get(){
 			$id=$this->get('id');
-			if(empty($id)){
-				$response = $this->api->vrow('nm_tabel');
-	            $this->response($response, 200);
-	        }
+				if(empty($id)){
+					$response = $this->api->vrow('nm_tabel');
+		            $this->response($response, 200);
+		        }
 	 
-	        $exec = $this->api->vrow('nm_tabel',$id);
+	       		$exec = $this->api->vrow('nm_tabel',$id);
 	         
-	        if($exec){
-	        	$response = array('code'=>200,'message'=>'Your request has been success','news'=>$exec);
-	            $this->response($response, 200); // 200 being the HTTP response code
-	        }else{
-	        	$response = array('code'=>201,'message'=>'Upss, problem your request!!');
-	            $this->response($response, 404);
-	        }		
+		        if($exec){
+		        	$response = array('code'=>200,'message'=>'Your request has been success','news'=>$exec);
+		            $this->response($response, 200); // 200 being the HTTP response code
+		        }else{
+		        	$response = array('code'=>201,'message'=>'Upss, problem your request!!');
+		            $this->response($response, 404);
+		        }		
 	    }
-	
-	
+
 	- Silahkan buka browser dan ketik http://localhost/rest-full-api/restfull?id=1
 	- Maka secara default akan menampilkan data dalam bentuk format file json.
