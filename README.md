@@ -4,8 +4,8 @@ merupakan implementasi dari API *(Application Programming Interface)*. REST *(Re
 
 **Bagaimana membangun Restfull-api menggunakan CodeIgniter.?**
 Ada beberapa langkah dan beberapa library yang harus anda download. Berikut ini langkah-langkahnya.
-- Download CodeIgniter disini [CodeIgniter](https://www.codeigniter.com/download)
-- Download Library disini [Github](https://github.com/chriskacerguis/codeigniter-restserver)
+- Download CodeIgniter disini [Download CodeIgniter](https://www.codeigniter.com/download)
+- Download Library disini [Download Library](https://github.com/chriskacerguis/codeigniter-restserver)
 - Lakukan beberapa konfigurasi seperti berikut ini:
 	- Copy file **rest.php** ke folder  /appclication/config/rest.php
 	- Copy file **REST_Contoller.php** dan **Format.php** ke dalam folder /application/libraries/...
@@ -73,3 +73,4 @@ Ada beberapa langkah dan beberapa library yang harus anda download. Berikut ini 
 
 	- Silahkan buka browser dan ketik http://localhost/rest-full-api/restfull?id=1
 	- Maka secara default akan menampilkan data dalam bentuk format file json.
+	- Lakukan tester menggunakan postman application [Download postman](https://www.getpostman.com/downloads/)
