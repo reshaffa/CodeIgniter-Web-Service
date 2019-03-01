@@ -4,7 +4,7 @@ merupakan implementasi dari API *(Application Programming Interface)*. REST *(Re
 
 **Bagaimana membangun Restfull-api menggunakan CodeIgniter.?**
 Ada beberapa langkah dan beberapa library yang harus anda download. Berikut ini langkah-langkahnya.
--Download CodeIgniter disini [CodeIgniter](https://www.codeigniter.com/download)
--Download Library disini [Github](https://github.com/chriskacerguis/codeigniter-restserver)
--Lakukan beberapa konfigurasi seperti berikut ini:
-	-Buka file appclication/config/rest.php
+- Download CodeIgniter disini [CodeIgniter](https://www.codeigniter.com/download)
+- Download Library disini [Github](https://github.com/chriskacerguis/codeigniter-restserver)
+- Lakukan beberapa konfigurasi seperti berikut ini:
+	- Buka file appclication/config/rest.php
